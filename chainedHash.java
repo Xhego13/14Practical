@@ -10,7 +10,7 @@ public class chainedHash{
     }
   private LinkedList<Entry>[] table; 
   int m;
-  int N=; 
+  int N=0; 
  public boolean isInTable(String key) {
         return lookup(key) != null;
     }
