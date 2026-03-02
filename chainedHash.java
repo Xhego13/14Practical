@@ -9,8 +9,8 @@ public class chainedHash{
         }
     }
     private LinkedList<Entry>[] table; 
-       int m;
-       int N; 
+    int m;
+    int N; 
 
   
 }
