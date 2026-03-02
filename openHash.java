@@ -10,7 +10,7 @@ public class openHash{
     }
     private LinkedList<Entry>[] table; 
     int m;
-    int N=; 
+    int N=0; 
 
     public openHash(int m) {
         this.m = m;
@@ -22,7 +22,7 @@ public class openHash{
     }
     public int hash(String key) {
         int h = key.hashCode();
-        return h+(N%m)     
+        return Maths.abs(h)%m;   
     }
     public void insert(String key, String value) {
         int index = hash(key);
