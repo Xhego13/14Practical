@@ -63,7 +63,7 @@ public class openHash{
     }
 
     public boolean isFull() {
-        return N >= m; 
+        return N<= m; 
     }
 
     public boolean isEmpty() {
