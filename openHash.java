@@ -3,18 +3,15 @@ public class openHash{
         String key;
         String value;
      
-    Entry(String key, String value) {
+        Entry(String key, String value) {
             this.key = key;
             this.value = value;
         }
     }
- }
-
     private LinkedList<Entry>[] table; 
-    private int m;
-    private int N; 
+       int m;
+       int N; 
 
-    // Constructor
     public openHash(int m) {
         this.m = m;
         this.N = 0;
@@ -72,8 +69,6 @@ public class openHash{
     public boolean isEmpty() {
         return N == 0;
     }
-
-    
     public void printTable() {
         for (int i = 0; i < m; i++) {
             System.out.print(i + ": ");
