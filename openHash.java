@@ -38,7 +38,6 @@ public class openHash{
         table[index].add(new Entry(key, value));
         N++;
     }
-     // (c) Lookup method
     public String lookup(String key) {
         int index = hash(key);
         for (Entry e : table[index]) {
