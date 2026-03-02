@@ -11,7 +11,7 @@ public class openHash{
  }
 
     private LinkedList<Entry>[] table; 
-    private int m; ze
+    private int m;
     private int N; 
 
     // Constructor
@@ -23,14 +23,10 @@ public class openHash{
             table[i] = new LinkedList<>();
         }
     }
-
-    
     public int hash(String key) {
         int h = key.hashCode();
-        return h+(N%m)
+        return h+(N%m)     
     }
-
-    
     public void insert(String key, String value) {
         int index = hash(key);
         for (Entry e : table[index]) {
@@ -42,6 +38,4 @@ public class openHash{
         table[index].add(new Entry(key, value));
         N++;
     }
-
-
 }
