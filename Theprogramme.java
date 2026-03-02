@@ -18,7 +18,7 @@ runTime = 0;
    for(repetition = 0; repetition < repetitions; repetition++) {
       start = System.currentTimeMillis();
       finish = System.currentTimeMillis();
-	   openHash();
+	  openHash();
       time = (double)(finish - start);
       runTime += time;
       runTime2 += (time*time); 
