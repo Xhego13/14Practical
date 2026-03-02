@@ -78,6 +78,4 @@ public class openHash{
             System.out.println();
         }
     }
-  
-
 }
