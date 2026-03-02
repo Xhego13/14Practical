@@ -18,7 +18,7 @@ runTime = 0;
    for(repetition = 0; repetition < repetitions; repetition++) {
       start = System.currentTimeMillis();
       finish = System.currentTimeMillis();
-			//call meth1
+	   openHash();
       time = (double)(finish - start);
       runTime += time;
       runTime2 += (time*time); 
@@ -26,7 +26,7 @@ runTime = 0;
   for(repetition = 0; repetition < repetitions; repetition++) {
       start = System.currentTimeMillis();
       finish = System.currentTimeMillis();
-			//meth2
+	  chainedHash();
       time = (double)(finish - start);
       runTime += time;
       runTime2 += (time*time); 
