@@ -14,11 +14,9 @@ public class chainedHash{
  public boolean isInTable(String key) {
         return lookup(key) != null;
     }
-
     public boolean isFull() {
         return N >= m; 
     }
-
     public boolean isEmpty() {
         return N == 0;
     }
@@ -31,5 +29,5 @@ public class chainedHash{
             System.out.println();
         }
     }
- 
+
 }
