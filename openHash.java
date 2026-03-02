@@ -10,7 +10,7 @@ public class openHash{
     }
     private LinkedList<Entry>[] table; 
     int m;
-    int N; 
+    int N=; 
 
     public openHash(int m) {
         this.m = m;
