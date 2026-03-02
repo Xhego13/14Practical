@@ -1,5 +1,5 @@
 // Code is stored as 13template.java
-import java.lang.Math.*;   import java.io.*;   import java.text.*;
+import java.lang.Math.*;   import java.io.*;   import java.text.*;import java.util.*;
 
 public class timeMethods{
 int N = 1 << 20;
