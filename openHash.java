@@ -38,4 +38,52 @@ public class openHash{
         table[index].add(new Entry(key, value));
         N++;
     }
+     // (c) Lookup method
+    public String lookup(String key) {
+        int index = hash(key);
+        for (Entry e : table[index]) {
+            if (e.key.equals(key)) {
+                return e.value;
+            }
+        }
+        return null;
+    }
+    public String remove(String key) {
+        int index = hash(key);
+        for (Entry e : table[index]) {
+            if (e.key.equals(key)) {
+                String val = e.value;
+                table[index].remove(e);
+                N--;
+                return val;
+            }
+        }
+        return null; 
+    }
+
+   
+    public boolean isInTable(String key) {
+        return lookup(key) != null;
+    }
+
+    public boolean isFull() {
+        return N >= m; 
+    }
+
+    public boolean isEmpty() {
+        return N == 0;
+    }
+
+    
+    public void printTable() {
+        for (int i = 0; i < m; i++) {
+            System.out.print(i + ": ");
+            for (Entry e : table[i]) {
+                System.out.print("(" + e.key + ", " + e.value + ") ");
+            }
+            System.out.println();
+        }
+    }
+  
+
 }
